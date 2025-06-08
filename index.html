@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Web App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #app {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: royalblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Welcome to My Web App!</h1>
+    <p>Click the button below to see a message:</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="output" style="margin-top:20px; font-weight:bold;"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("output").textContent = "Hello! This is a simple web application.";
+    }
+  </script>
+</body>
+</html>
